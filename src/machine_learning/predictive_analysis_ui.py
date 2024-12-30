@@ -13,7 +13,7 @@ def predict_churn(X_live, churn_features, churn_pipeline_dc_fe, churn_pipeline_m
     churn_prediction = churn_pipeline_model.predict(X_live_churn_dc_fe)
     churn_prediction_proba = churn_pipeline_model.predict_proba(
         X_live_churn_dc_fe)
-    # st.write(churn_prediction_proba)
+    st.write(churn_prediction_proba)
 
     # Create a logic to display the results
     churn_prob = churn_prediction_proba[0, churn_prediction][0]*100

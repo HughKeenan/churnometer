@@ -53,7 +53,7 @@ def page_prospect_body():
     st.write("---")
 
     # Generate Live Data
-    # check_variables_for_UI(tenure_features, churn_features, cluster_features)
+    #check_variables_for_UI(tenure_features, churn_features, cluster_features)
     X_live = DrawInputsWidgets()
 
     # predict on live data
@@ -94,6 +94,7 @@ def DrawInputsWidgets():
     col5, col6, col7, col8 = st.columns(4)
 
     # We are using these features to feed the ML pipeline - values copied from check_variables_for_UI() result
+    # {'OnlineBackup', 'PhoneService', 'Contract', 'PaymentMethod', 'InternetService', 'MonthlyCharges'}
 
     # create an empty DataFrame, which will be the live data
     X_live = pd.DataFrame([], index=[0])
