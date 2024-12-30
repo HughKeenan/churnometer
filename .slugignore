@@ -1,6 +1,6 @@
 *.ipynb
 jupyter_notebooks
-inputs/datasets/raw
+/inputs/datasets/raw
 README.md
 .gitpod.dockerfile
 .gitpod.yml
@@ -9,3 +9,7 @@ __pycache__/
 *.pyc
 *.pyo
 kaggle.json
+core.Microsoft*
+core.mongo*
+core.python*
+.github/
